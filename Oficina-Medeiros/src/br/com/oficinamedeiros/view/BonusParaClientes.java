@@ -255,7 +255,7 @@ public class BonusParaClientes {
 			JOptionPane.showMessageDialog(null, "BONUS FUI EXCLUIDO !!!");
 			break;
 		case 1:
-			JOptionPane.showMessageDialog(null, "BONUS N√O FUI EXCLUIDO !!!");
+			JOptionPane.showMessageDialog(null, "BONUS N√ÉO FUI EXCLUIDO !!!");
 			break;
 		}
 	}

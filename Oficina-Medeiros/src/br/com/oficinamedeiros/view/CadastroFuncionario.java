@@ -338,7 +338,7 @@ public class CadastroFuncionario {
 						textEmail.getText(), textEndereco.getText(), textLogin.getText(), textSenha.getText()));
 
 
-				JOptionPane.showMessageDialog(null, "FUNCIONRIO ATUALIZADO!!!");
+				JOptionPane.showMessageDialog(null, "FUNCIONARIO ATUALIZADO!!!");
 				limparDados();
 				bloquearFuncoes();
 				funcionarioController.carregarTable();
@@ -361,7 +361,7 @@ public class CadastroFuncionario {
 			break;
 
 		case 1:
-			JOptionPane.showMessageDialog(null, "FUNCIONRIO N√O FUI EXCLUIDO!!!");
+			JOptionPane.showMessageDialog(null, "FUNCIONARIO N√ÉO FUI EXCLUIDO!!!");
 			break;
 		}
 	}
@@ -488,10 +488,10 @@ public class CadastroFuncionario {
 			if (!textEndereco.getText().equals("")) {
 				return true;
 			} else {
-				throw new OficinaException(" CAMPO DO ENDERE«O VAZIO !!!");
+				throw new OficinaException(" CAMPO DO ENDERE√áO VAZIO !!!");
 			}
 		} catch (OficinaException e) {
-			JOptionPane.showMessageDialog(null, " CAMPO DO ENDERE«O VAZIO !!!");
+			JOptionPane.showMessageDialog(null, " CAMPO DO ENDERE√áO VAZIO !!!");
 			e.printStackTrace();
 		}
 		return false;
@@ -530,10 +530,10 @@ public class CadastroFuncionario {
 			if (!funcao.getSelectedItem().equals("")) {
 				return true;
 			} else {
-				throw new OficinaException(" CAMPO DO FUN«√O VAZIO !!!");
+				throw new OficinaException(" CAMPO DO FUN√á√ÉO VAZIO !!!");
 			}
 		} catch (OficinaException e) {
-			JOptionPane.showMessageDialog(null, " CAMPO DO FUN«√O VAZIO !!!");
+			JOptionPane.showMessageDialog(null, " CAMPO DO FUN√á√ÉO VAZIO !!!");
 			e.printStackTrace();
 		}
 		return false;

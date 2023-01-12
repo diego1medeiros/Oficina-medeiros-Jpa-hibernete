@@ -347,7 +347,7 @@ public class PesquisaServicos {
 			public void actionPerformed(ActionEvent e) {
 
 				try {
-					RelatorioUtil.criarRelatorio("C:/dev/worspace/Oficina-Medeiros/resources/relatorio/servicos.jrxml",
+					RelatorioUtil.criarRelatorio("C:/Users/diego/git/Oficina-medeiros-Jpa-hibernete/Oficina-Medeiros/relatorio/servicos.jrxml",
 							servicoController.buscarServicosPorNomeFuncionario(servico.getFuncionario().getNome()));
 				} catch (JRException e1) {
 					e1.printStackTrace();

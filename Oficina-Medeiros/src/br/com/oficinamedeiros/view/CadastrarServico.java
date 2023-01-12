@@ -170,14 +170,6 @@ public class CadastrarServico {
 		lblNewLabel_9.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 12));
 		frmOficinaMedeiros.getContentPane().add(lblNewLabel_9);
 
-	/*	VeiculoController veiculoController = new VeiculoController();
-		List<Veiculo> listaVeiculos = veiculoController.buscarDadosDosVeiculos();
-		modelos = new JComboBox(listaVeiculos.toArray());
-		modelos.setBounds(935, 98, 166, 22);
-		modelos.setEditable(true);
-		modelos.setEnabled(false);
-		modelos.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 11));
-		frmOficinaMedeiros.getContentPane().add(modelos);*/
 
 		JLabel lblNewLabel_4 = new JLabel("DATA DO SERVICO");
 		lblNewLabel_4.setBounds(27, 146, 122, 14);
@@ -397,7 +389,7 @@ public class CadastrarServico {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					RelatorioUtil.criarRelatorio(
-							"C:/dev/worspace/Oficina-Medeiros/relatorio/ordemDeServico.jrxml",
+							"C:/Users/diego/git/Oficina-medeiros-Jpa-hibernete/Oficina-Medeiros/relatorio/ordemDeServico.jrxml",
 							servicoController.buscarServicosPorNomeFuncionario(servico.getFuncionario().getNome()));
 					System.out.println(servico.getFuncionario().getNome());
 				} catch (JRException e1) {
@@ -416,7 +408,7 @@ public class CadastrarServico {
 				
 				try {
 					RelatorioUtil.criarRelatorio(
-							"C:/dev/worspace/Oficina-Medeiros/relatorio/cartaDeServico.jrxml",
+							"C:/Users/diego/git/Oficina-medeiros-Jpa-hibernete/Oficina-Medeiros/relatorio/cartaDeServico.jrxml",
 							servicoController.buscarServicosPorNomeFuncionario(servico.getFuncionario().getNome()));
 					System.out.println(servico.getFuncionario().getNome());
 				} catch (JRException e1) {
@@ -446,7 +438,7 @@ public class CadastrarServico {
 				limparDados();
 				desabilitarFuncoes();
 
-				JOptionPane.showMessageDialog(null, "SERVI�O CADASTRADO !!!");
+				JOptionPane.showMessageDialog(null, "SERVIÇO CADASTRADO !!!");
 
 			} else if (acaoBotao == 1) {
 
@@ -457,7 +449,7 @@ public class CadastrarServico {
 				servicoController.carregarTable();
 				limparDados();
 				desabilitarFuncoes();
-				JOptionPane.showMessageDialog(null, "SERVI�O ATUALIZADO !!!");
+				JOptionPane.showMessageDialog(null, "SERVIÇO ATUALIZADO !!!");
 
 			}
 		}
@@ -465,7 +457,7 @@ public class CadastrarServico {
 
 	public void excluir() {
 
-		switch (JOptionPane.showConfirmDialog(null, "DESEJA REALMENTE EXCLUIR SERVICO ?", "", JOptionPane.YES_NO_OPTION,
+		switch (JOptionPane.showConfirmDialog(null, "DESEJA REALMENTE EXCLUIR SERVIÇO ?", "", JOptionPane.YES_NO_OPTION,
 				JOptionPane.QUESTION_MESSAGE)) {
 
 		case 0:
@@ -473,12 +465,12 @@ public class CadastrarServico {
 			modelo.removeRow(table.getSelectedRow());
 			servicoController.removerServico(servico);
 			servicoController.carregarTable();
-			JOptionPane.showMessageDialog(null, "SERVICO FUI EXCLUIDO!!!");
+			JOptionPane.showMessageDialog(null, "SERVIÇO FUI EXCLUIDO!!!");
 			break;
 
 		case 1:
 
-			JOptionPane.showMessageDialog(null, "SERVI�O N�O FUI EXCLUIDO!!!");
+			JOptionPane.showMessageDialog(null, "SERVIÇO NÃO FUI EXCLUIDO!!!");
 			break;
 		}
 	}
@@ -610,10 +602,10 @@ public class CadastrarServico {
 			if (!descricao.getText().equals("")) {
 				return true;
 			} else {
-				throw new OficinaException(" CAMPO DO DESCRI��O DO SERVI�O VAZIO !!!");
+				throw new OficinaException(" CAMPO DO DESCRIÇÃO DO SERVIÇO VAZIO !!!");
 			}
 		} catch (OficinaException e) {
-			JOptionPane.showMessageDialog(null, " CAMPO DO DESCRI��O DO SERVI�O VAZIO !!!");
+			JOptionPane.showMessageDialog(null, " CAMPO DO DESCRIÇÃO DO SERVIÇO VAZIO !!!");
 			e.printStackTrace();
 		}
 		return false;
@@ -624,10 +616,10 @@ public class CadastrarServico {
 			if (!textStatus.getText().equals("")) {
 				return true;
 			} else {
-				throw new OficinaException(" CAMPO DO STATUS DO SERVI�O VAZIO !!!");
+				throw new OficinaException(" CAMPO DO STATUS DO SERVIÇO VAZIO !!!");
 			}
 		} catch (OficinaException e) {
-			JOptionPane.showMessageDialog(null, " CAMPO DO STATUS DO SERVI�O VAZIO !!!");
+			JOptionPane.showMessageDialog(null, " CAMPO DO STATUS DO SERVIÇO VAZIO !!!");
 			e.printStackTrace();
 		}
 		return false;

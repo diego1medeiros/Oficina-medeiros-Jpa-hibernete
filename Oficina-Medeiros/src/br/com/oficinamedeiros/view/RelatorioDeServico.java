@@ -165,7 +165,7 @@ public class RelatorioDeServico {
 
 				try {
 					RelatorioUtil.criarRelatorio(
-							"C:/dev/worspace/Oficina-Medeiros/relatorio/valorTotalServicos.jrxml",
+							"C:/Users/diego/git/Oficina-medeiros-Jpa-hibernete/Oficina-Medeiros/relatorio/valorTotalServicos.jrxml",
 							servicoController.relatorioValorTotalDeServicos(servico));
 				} catch (JRException e1) {
 					e1.printStackTrace();

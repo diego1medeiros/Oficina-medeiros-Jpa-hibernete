@@ -276,7 +276,7 @@ public class PesquisaVeiculos {
 
 				try {
 					RelatorioUtil.criarRelatorio(
-							"C:/dev/worspace/Oficina-Medeiros/resources/relatorio/relatorioVeiculos.jrxml",
+							"C:/Users/diego/git/Oficina-medeiros-Jpa-hibernete/Oficina-Medeiros/relatorio/relatorioVeiculos.jrxml",
 							veiculoController.buscarDadosDosVeiculos(veiculo));
 				} catch (JRException e1) {
 					e1.printStackTrace();
@@ -314,7 +314,7 @@ public class PesquisaVeiculos {
 
 		case 1:
 
-			JOptionPane.showMessageDialog(null, "VEICULO NÃO FUI EXCLUIDO!!!");
+			JOptionPane.showMessageDialog(null, "VEICULO Nï¿½O FUI EXCLUIDO!!!");
 			break;
 		}
 	}

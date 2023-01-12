@@ -339,7 +339,7 @@ public class CadastroVeiculo {
 
 		case 1:
 
-			JOptionPane.showMessageDialog(null, "VEICULO N√O FUI EXCLUIDO!!!");
+			JOptionPane.showMessageDialog(null, "VEICULO N√ÉO FUI EXCLUIDO!!!");
 			break;
 		}
 	}

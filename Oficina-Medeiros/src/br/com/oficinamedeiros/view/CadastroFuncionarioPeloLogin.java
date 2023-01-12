@@ -277,7 +277,7 @@ public class CadastroFuncionarioPeloLogin {
 			break;
 
 		case 1:
-			JOptionPane.showMessageDialog(null, "FUNCIONRIO NÃO FUI EXCLUIDO!!!");
+			JOptionPane.showMessageDialog(null, "FUNCIONRIO NÃƒO FUI EXCLUIDO!!!");
 			break;
 		}
 	}
@@ -378,10 +378,10 @@ public class CadastroFuncionarioPeloLogin {
 			if (!textEndereco.getText().equals("")) {
 				return true;
 			} else {
-				throw new OficinaException(" CAMPO DO ENDEREÇO VAZIO !!!");
+				throw new OficinaException(" CAMPO DO ENDEREï¿½O VAZIO !!!");
 			}
 		} catch (OficinaException e) {
-			JOptionPane.showMessageDialog(null, " CAMPO DO ENDEREÇO VAZIO !!!");
+			JOptionPane.showMessageDialog(null, " CAMPO DO ENDEREï¿½O VAZIO !!!");
 			e.printStackTrace();
 		}
 		return false;
@@ -420,10 +420,10 @@ public class CadastroFuncionarioPeloLogin {
 			if (!funcao.getSelectedItem().equals("")) {
 				return true;
 			} else {
-				throw new OficinaException(" CAMPO DO FUNÇÃO VAZIO !!!");
+				throw new OficinaException(" CAMPO DO FUNï¿½ï¿½O VAZIO !!!");
 			}
 		} catch (OficinaException e) {
-			JOptionPane.showMessageDialog(null, " CAMPO DO FUNÇÃO VAZIO !!!");
+			JOptionPane.showMessageDialog(null, " CAMPO DO FUNï¿½ï¿½O VAZIO !!!");
 			e.printStackTrace();
 		}
 		return false;

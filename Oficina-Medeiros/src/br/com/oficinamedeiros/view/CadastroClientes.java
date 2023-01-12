@@ -64,21 +64,12 @@ public class CadastroClientes {
 		});
 	}
 
-	/**
-	 * Create the application.
-	 * 
-	 * @throws ParseException
-	 */
 	public CadastroClientes() {
 		initialize();
 		clienteController.carregarTabela();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 * 
-	 * @throws ParseException
-	 */
+	
 	private void initialize() {
 		frmOficinaMedeiros = new JFrame();
 		frmOficinaMedeiros.getContentPane().setBackground(SystemColor.activeCaption);
@@ -332,7 +323,7 @@ public class CadastroClientes {
 			JOptionPane.showMessageDialog(null, "CLIENTE FUI EXCLUIDO !!!");
 			break;
 		case 1:
-			JOptionPane.showMessageDialog(null, "CLIENTE N�O FUI EXCLUIDO !!!");
+			JOptionPane.showMessageDialog(null, "CLIENTE NÃO FUI EXCLUIDO !!!");
 			break;
 		}
 	}
@@ -445,10 +436,10 @@ public class CadastroClientes {
 			if (!textEndereco.getText().equals("")) {
 				return true;
 			} else {
-				throw new OficinaException(" CAMPO DO ENDERE�O VAZIO !!!");
+				throw new OficinaException(" CAMPO DO ENDEREÇO VAZIO !!!");
 			}
 		} catch (OficinaException e) {
-			JOptionPane.showMessageDialog(null, " CAMPO DO ENDERE�O VAZIO !!!");
+			JOptionPane.showMessageDialog(null, " CAMPO DO ENDEREÇO VAZIO !!!");
 			e.printStackTrace();
 		}
 		return false;

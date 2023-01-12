@@ -310,7 +310,7 @@ public class PesquisaFuncionarios {
 			public void actionPerformed(ActionEvent e) {
 
 				try {
-					RelatorioUtil.criarRelatorio("C:/dev/worspace/Oficina-Medeiros/resources/relatorio/relatorioFuncionario.jrxml",
+					RelatorioUtil.criarRelatorio("C:/Users/diego/git/Oficina-medeiros-Jpa-hibernete/Oficina-Medeiros/relatorio/relatorioFuncionario.jrxml",
 							funcionarioController.buscarDadosDosFuncionarios(funcionario));
 				} catch (JRException e1) {
 					e1.printStackTrace();
@@ -347,7 +347,7 @@ public class PesquisaFuncionarios {
 			break;
 
 		case 1:
-			JOptionPane.showMessageDialog(null, "FUNCIONRIO NÃO FUI EXCLUIDO!!!");
+			JOptionPane.showMessageDialog(null, "FUNCIONRIO Nï¿½O FUI EXCLUIDO!!!");
 			break;
 		}
 	}
@@ -428,10 +428,10 @@ public class PesquisaFuncionarios {
 			if (!textEndereco.getText().equals("")) {
 				return true;
 			} else {
-				throw new OficinaException(" CAMPO DO ENDEREÇO VAZIO !!!");
+				throw new OficinaException(" CAMPO DO ENDEREï¿½O VAZIO !!!");
 			}
 		} catch (OficinaException e) {
-			JOptionPane.showMessageDialog(null, " CAMPO DO ENDEREÇO VAZIO !!!");
+			JOptionPane.showMessageDialog(null, " CAMPO DO ENDEREï¿½O VAZIO !!!");
 			e.printStackTrace();
 		}
 		return false;
@@ -470,10 +470,10 @@ public class PesquisaFuncionarios {
 			if (!textFuncao.getText().equals("")) {
 				return true;
 			} else {
-				throw new OficinaException(" CAMPO DO FUNÇÃO VAZIO !!!");
+				throw new OficinaException(" CAMPO DO FUNï¿½ï¿½O VAZIO !!!");
 			}
 		} catch (OficinaException e) {
-			JOptionPane.showMessageDialog(null, " CAMPO DO FUNÇÃO VAZIO !!!");
+			JOptionPane.showMessageDialog(null, " CAMPO DO FUNï¿½ï¿½O VAZIO !!!");
 			e.printStackTrace();
 		}
 		return false;

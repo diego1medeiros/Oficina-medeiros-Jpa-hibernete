@@ -70,20 +70,10 @@ public class PesquisaClientes {
 		});
 	}
 
-	/**
-	 * Create the application.
-	 * 
-	 * @throws ParseException
-	 */
 	public PesquisaClientes() {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 * 
-	 * @throws ParseException
-	 */
 	private void initialize() {
 		frmOficinaMedeiros = new JFrame();
 		frmOficinaMedeiros.setModalExclusionType(ModalExclusionType.TOOLKIT_EXCLUDE);
@@ -292,7 +282,7 @@ public class PesquisaClientes {
 			public void actionPerformed(ActionEvent e) {
 
 				try {
-					RelatorioUtil.criarRelatorio("C:/dev/worspace/Oficina-Medeiros/resources/relatorio/relatorioClientes.jrxml",
+					RelatorioUtil.criarRelatorio("C:/Users/diego/git/Oficina-medeiros-Jpa-hibernete/Oficina-Medeiros/relatorio/relatorioClientes.jrxml",
 							clienteController.buscarDadosDosClientes(cliente));
 				} catch (JRException e1) {
 					e1.printStackTrace();
@@ -380,7 +370,7 @@ public class PesquisaClientes {
 			JOptionPane.showMessageDialog(null, "CLIENTE FUI EXCLUIDO !!!");
 			break;
 		case 1:
-			JOptionPane.showMessageDialog(null, "CLIENTE NÃO FUI EXCLUIDO !!!");
+			JOptionPane.showMessageDialog(null, "CLIENTE Nï¿½O FUI EXCLUIDO !!!");
 			break;
 		}
 	}
@@ -451,10 +441,10 @@ public class PesquisaClientes {
 			if (!textEndereco.getText().equals("")) {
 				return true;
 			} else {
-				throw new OficinaException(" CAMPO DO ENDEREÇO VAZIO !!!");
+				throw new OficinaException(" CAMPO DO ENDEREï¿½O VAZIO !!!");
 			}
 		} catch (OficinaException e) {
-			JOptionPane.showMessageDialog(null, " CAMPO DO ENDEREÇO VAZIO !!!");
+			JOptionPane.showMessageDialog(null, " CAMPO DO ENDEREï¿½O VAZIO !!!");
 			e.printStackTrace();
 		}
 		return false;

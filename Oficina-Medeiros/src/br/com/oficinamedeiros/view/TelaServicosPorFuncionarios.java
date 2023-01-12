@@ -100,7 +100,7 @@ public class TelaServicosPorFuncionarios {
 
 				try {
 					RelatorioUtil.criarRelatorio(
-							"C:/dev/worspace/Oficina-Medeiros/relatorio/teste.jrxml",
+							"C:/Users/diego/git/Oficina-medeiros-Jpa-hibernete/Oficina-Medeiros/relatorio/teste.jrxml",
 							servicoController.buscaQdtDosServicosPorFuncionarios());
 				} catch (JRException e1) {
 					e1.printStackTrace();
@@ -118,8 +118,8 @@ public class TelaServicosPorFuncionarios {
 
 				try {
 
-					String pathJasper = "C:\\dev\\worspace\\Oficina-Medeiros\\relatorio\\teste.jasper";
-					String saida = "C:\\dev\\worspace\\Oficina-Medeiros\\relatorio\\teste.pdf";
+					String pathJasper = "C:\\Users\\diego\\git\\Oficina-medeiros-Jpa-hibernete\\Oficina-Medeiros\\relatorio\\teste.jasper";
+					String saida = "C:\\Users\\diego\\git\\Oficina-medeiros-Jpa-hibernete\\Oficina-Medeiros\\relatorio\\teste.pdf";
 				
 				    RelatorioUtil.gerarArquivoPdf(pathJasper, servicoController.buscaQdtDosServicosPorFuncionarios(),
 					saida);

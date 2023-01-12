@@ -108,9 +108,9 @@ public class ServicoController {
 					servico.getFuncionario().getIdFuncionario() });
 		}
 		if (!listaServicos.isEmpty()) {
-			JOptionPane.showMessageDialog(null, " SERVI�O  ENCONTRADO!!!");
+			JOptionPane.showMessageDialog(null, " SERVIÇO  ENCONTRADO!!!");
 		} else {
-			JOptionPane.showMessageDialog(null, " SERVI�O NÃO ENCONTRADO!!!");
+			JOptionPane.showMessageDialog(null, " SERVIÇO NÃO ENCONTRADO!!!");
 		}
 
 	}
@@ -128,9 +128,9 @@ public class ServicoController {
 					servico.getFuncionario().getIdFuncionario() });
 		}
 		if (!listaServicos.isEmpty()) {
-			JOptionPane.showMessageDialog(null, " SERVI�O  ENCONTRADO!!!");
+			JOptionPane.showMessageDialog(null, " SERVIÇO  ENCONTRADO!!!");
 		} else {
-			JOptionPane.showMessageDialog(null, " SERVI�O NÃO ENCONTRADO!!!");
+			JOptionPane.showMessageDialog(null, " SERVIÇO NÃO ENCONTRADO!!!");
 		}
 	}
 
@@ -180,9 +180,9 @@ public class ServicoController {
 			
 		}
 		if (!listaServicos.isEmpty()) {
-			JOptionPane.showMessageDialog(null, " SERVI�O  ENCONTRADO!!!");
+			JOptionPane.showMessageDialog(null, " SERVIÇO  ENCONTRADO!!!");
 		} else {
-			JOptionPane.showMessageDialog(null, " SERVI�O NÃO ENCONTRADO!!!");
+			JOptionPane.showMessageDialog(null, " SERVIÇO NÃO ENCONTRADO!!!");
 		}
 
 	}
@@ -205,9 +205,9 @@ public class ServicoController {
 					servico.getObservacoes() });
 		}
 		if (!listaServicos.isEmpty()) {
-			JOptionPane.showMessageDialog(null, " SERVI�O  ENCONTRADO!!!");
+			JOptionPane.showMessageDialog(null, " SERVIÇO  ENCONTRADO!!!");
 		} else {
-			JOptionPane.showMessageDialog(null, " SERVI�O NÃO ENCONTRADO!!!");
+			JOptionPane.showMessageDialog(null, " SERVIÇO NÃO ENCONTRADO!!!");
 		}
 
 	}
