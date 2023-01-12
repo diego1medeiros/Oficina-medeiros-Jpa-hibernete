@@ -303,7 +303,7 @@ public class MostrarServicosFuncionario {
 					textStatus.setEnabled(false);
 					buttonVoltar.setEnabled(false);
 					btnAvancar.setEnabled(false);
-					JOptionPane.showMessageDialog(null, "VOCÊ ESTAR NO PRIMEIRO STATUS DO SERVIÇO!!!");
+					JOptionPane.showMessageDialog(null, "VOCE ESTAR NO PRIMEIRO STATUS DO SERVIÃ‡O!!!");
 				}
 
 			}
@@ -340,7 +340,7 @@ public class MostrarServicosFuncionario {
 					buttonVoltar.setEnabled(false);
 					btnAvancar.setEnabled(false);
 
-					JOptionPane.showMessageDialog(null, "VOCÊ ESTAR NO PRIMEIRO STATUS DO SERVIÇO!!!");
+					JOptionPane.showMessageDialog(null, "VOCE ESTAR NO PRIMEIRO STATUS DO SERVIÃ‡O!!!");
 	
 				}
 

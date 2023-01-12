@@ -370,7 +370,7 @@ public class PesquisaClientes {
 			JOptionPane.showMessageDialog(null, "CLIENTE FUI EXCLUIDO !!!");
 			break;
 		case 1:
-			JOptionPane.showMessageDialog(null, "CLIENTE N�O FUI EXCLUIDO !!!");
+			JOptionPane.showMessageDialog(null, "CLIENTE NÃO FUI EXCLUIDO !!!");
 			break;
 		}
 	}
@@ -441,10 +441,10 @@ public class PesquisaClientes {
 			if (!textEndereco.getText().equals("")) {
 				return true;
 			} else {
-				throw new OficinaException(" CAMPO DO ENDERE�O VAZIO !!!");
+				throw new OficinaException(" CAMPO DO ENDEREÇO VAZIO !!!");
 			}
 		} catch (OficinaException e) {
-			JOptionPane.showMessageDialog(null, " CAMPO DO ENDERE�O VAZIO !!!");
+			JOptionPane.showMessageDialog(null, " CAMPO DO ENDEREÇO VAZIO !!!");
 			e.printStackTrace();
 		}
 		return false;

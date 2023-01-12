@@ -367,13 +367,13 @@ public class PesquisaServicos {
 		servicoController.carregarTable();
 			limparDados();
 
-			JOptionPane.showMessageDialog(null, "SERVI�O ATUALIZADO !!!");
+			JOptionPane.showMessageDialog(null, "SERVIÇO ATUALIZADO !!!");
 		}
 	}
 
 	public void excluir() {
 
-		switch (JOptionPane.showConfirmDialog(null, "DESEJA REALMENTE EXCLUIR SERVICO ?", "", JOptionPane.YES_NO_OPTION,
+		switch (JOptionPane.showConfirmDialog(null, "DESEJA REALMENTE EXCLUIR SERVIÇO ?", "", JOptionPane.YES_NO_OPTION,
 				JOptionPane.QUESTION_MESSAGE)) {
 
 		case 0:
@@ -381,12 +381,12 @@ public class PesquisaServicos {
 			servicoController.removerServico(servico);
 			servicoController.carregarTable();
 
-			JOptionPane.showMessageDialog(null, "SERVICO FUI EXCLUIDO!!!");
+			JOptionPane.showMessageDialog(null, "SERVIÇO FUI EXCLUIDO!!!");
 			break;
 
 		case 1:
 
-			JOptionPane.showMessageDialog(null, "SERVI�O N�O FUI EXCLUIDO!!!");
+			JOptionPane.showMessageDialog(null, "SERVIÇO NÃO FUI EXCLUIDO!!!");
 			break;
 		}
 	}
@@ -511,10 +511,10 @@ public class PesquisaServicos {
 			if (!descricao.getText().equals("")) {
 				return true;
 			} else {
-				throw new OficinaException(" CAMPO DO DESCRI��O DO SERVI�O VAZIO !!!");
+				throw new OficinaException(" CAMPO DO DESCRIÇÃO DO SERVIÇO VAZIO !!!");
 			}
 		} catch (OficinaException e) {
-			JOptionPane.showMessageDialog(null, " CAMPO DO DESCRI��O DO SERVI�O VAZIO !!!");
+			JOptionPane.showMessageDialog(null, " CAMPO DO DESCRICÃO DO SERVIÇO VAZIO !!!");
 			e.printStackTrace();
 		}
 		return false;
@@ -525,10 +525,10 @@ public class PesquisaServicos {
 			if (!textStatus.getText().equals("")) {
 				return true;
 			} else {
-				throw new OficinaException(" CAMPO DO STATUS DO SERVI�O VAZIO !!!");
+				throw new OficinaException(" CAMPO DO STATUS DO SERVIÇO VAZIO !!!");
 			}
 		} catch (OficinaException e) {
-			JOptionPane.showMessageDialog(null, " CAMPO DO STATUS DO SERVI�O VAZIO !!!");
+			JOptionPane.showMessageDialog(null, " CAMPO DO STATUS DO SERVIÇO VAZIO !!!");
 			e.printStackTrace();
 		}
 		return false;
@@ -553,10 +553,10 @@ public class PesquisaServicos {
 			if (dataServico.getCalendar() != null) {
 				return true;
 			} else {
-				throw new OficinaException(" CAMPO DA DATA SERVICO VAZIO !!!");
+				throw new OficinaException(" CAMPO DA DATA SERVIÇO VAZIO !!!");
 			}
 		} catch (OficinaException e) {
-			JOptionPane.showMessageDialog(null, " CAMPO DA DATA SERVICO VAZIO !!!");
+			JOptionPane.showMessageDialog(null, " CAMPO DA DATA SERVIÇO VAZIO !!!");
 			e.printStackTrace();
 		}
 		return false;

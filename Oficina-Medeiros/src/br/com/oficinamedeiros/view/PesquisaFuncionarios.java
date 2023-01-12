@@ -347,7 +347,7 @@ public class PesquisaFuncionarios {
 			break;
 
 		case 1:
-			JOptionPane.showMessageDialog(null, "FUNCIONRIO N�O FUI EXCLUIDO!!!");
+			JOptionPane.showMessageDialog(null, "FUNCIONARIO NÃO FUI EXCLUIDO!!!");
 			break;
 		}
 	}
@@ -428,10 +428,10 @@ public class PesquisaFuncionarios {
 			if (!textEndereco.getText().equals("")) {
 				return true;
 			} else {
-				throw new OficinaException(" CAMPO DO ENDERE�O VAZIO !!!");
+				throw new OficinaException(" CAMPO DO ENDEREÇO VAZIO !!!");
 			}
 		} catch (OficinaException e) {
-			JOptionPane.showMessageDialog(null, " CAMPO DO ENDERE�O VAZIO !!!");
+			JOptionPane.showMessageDialog(null, " CAMPO DO ENDEREÇO VAZIO !!!");
 			e.printStackTrace();
 		}
 		return false;
@@ -470,10 +470,10 @@ public class PesquisaFuncionarios {
 			if (!textFuncao.getText().equals("")) {
 				return true;
 			} else {
-				throw new OficinaException(" CAMPO DO FUN��O VAZIO !!!");
+				throw new OficinaException(" CAMPO DO FUNÇÃO VAZIO !!!");
 			}
 		} catch (OficinaException e) {
-			JOptionPane.showMessageDialog(null, " CAMPO DO FUN��O VAZIO !!!");
+			JOptionPane.showMessageDialog(null, " CAMPO DO FUNÇÃO VAZIO !!!");
 			e.printStackTrace();
 		}
 		return false;
