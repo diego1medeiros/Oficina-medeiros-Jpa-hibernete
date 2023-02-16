@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public class FabricaConexao {
-
+//teste diego
 	
 	
 	private static final String URL="jdbc:postgresql://localhost/Oficina-Medeiros";
