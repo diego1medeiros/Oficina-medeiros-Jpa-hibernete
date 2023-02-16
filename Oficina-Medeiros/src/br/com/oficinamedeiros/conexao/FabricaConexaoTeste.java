@@ -22,6 +22,7 @@ import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 
 public class FabricaConexaoTeste {
 
+	
 	public static void main(String[] args) {
 
 		FabricaConexaoTeste conexao = new FabricaConexaoTeste();
