@@ -11,7 +11,7 @@ import br.com.oficinamedeiros.entity1.BonusCliente;
 import br.com.oficinamedeiros.entity1.Cliente;
 import br.com.oficinamedeiros.entity1.Veiculo;
 import br.com.oficinamedeiros.service.ClienteServiceImpl;
-
+/teste
 public class ClienteController {
 	private VeiculoController veiculoController = new VeiculoController();
 
